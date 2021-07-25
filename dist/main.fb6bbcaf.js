@@ -117,25 +117,8 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"js/plugins.js":[function(require,module,exports) {
-// Avoid `console` errors in browsers that lack a console.
-(function () {
-  var method;
+})({"js/main.js":[function(require,module,exports) {
 
-  var noop = function noop() {};
-
-  var methods = ['assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error', 'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log', 'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd', 'timeline', 'timelineEnd', 'timeStamp', 'trace', 'warn'];
-  var length = methods.length;
-  var console = window.console = window.console || {};
-
-  while (length--) {
-    method = methods[length]; // Only stub undefined methods.
-
-    if (!console[method]) {
-      console[method] = noop;
-    }
-  }
-})(); // Place any jQuery/helper plugins in here.
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -164,7 +147,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51780" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56406" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -340,5 +323,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/plugins.js"], null)
-//# sourceMappingURL=/plugins.7f97feee.js.map
+},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/main.js"], null)
+//# sourceMappingURL=/main.fb6bbcaf.js.map
